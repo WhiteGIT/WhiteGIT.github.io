@@ -1,22 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="bower_components/jquery-1.7.1.min.js" ></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>VIP视频</title>
+  
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+  
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+  
+    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+  
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
+  
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
+  
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+  
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+  
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/app.css">
 </head>
-<body>
-    <div style="z-index: 9; width: 100px;height: 100px;position: absolute;bottom: 0;background:#ccc" id="ad">广告</div>
-    <input style="width: 80%;padding: 5px;"  id="url"><button id="play">播放</button>
-    <iframe id="ivideo" style="width: 100%;" height="500px;" allowfullscreen="" allowtransparency=""  src="" frameborder="0"></iframe>
+<body class="am-with-topbar-fixed-top">
+    <!--[if lte IE 9]>
+    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
+    href="http://browsehappy.com/" target="_blank">升级浏览器</a>
+    以获得更好的体验！</p>
+    <![endif]-->
+<style>
+    .get {
+      background: #1E5B94;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    .get-title {
+      font-size: 200%;
+      border: 2px solid #fff;
+      padding: 20px;
+      display: inline-block;
+    }
+
+    .get-btn {
+      background: #fff;
+    }
+    .footer p {
+      color: #7f8c8d;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+     
+    }
+</style>    
+<header class="am-topbar am-topbar-fixed-top">
+        <div class="am-container">
+          <h1 class="am-topbar-brand">
+            <a href="#">小灯芯</a>
+          </h1>
+      
+          <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
+                  data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
+              class="am-icon-bars"></span></button>
+      
+          <div class="am-collapse am-topbar-collapse" id="collapse-head">
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+              <li class="am-active"><a href="#">首页</a></li>
+              <li><a href="#">小说</a></li>
+              <li><a href="#">漫画</a></li>
+             
+            </ul>
+          </div>
+        </div>
+</header>
+<div class="am-container" style="margin: 10px auto">
+        <div class="am-input-group">
+                <input type="text" class="am-form-field" id="url" placeholder="输入视频地址...">
+                <span class="am-input-group-btn">
+                  <button class="am-btn am-btn-default" id="play" type="button">解析视频</button>
+                </span>
+              </div>
+ </div>   
+<div class="get">
+        <div class="am-g">
+          <div class="am-u-lg-12">
+            <h1 class="get-title">...请在上方粘贴视频地址...                 </h1>
+          </div>
+        </div>
+</div>
+<iframe id="ivideo" style="width: 100%;display:none;" height="500px;" allowfullscreen="" allowtransparency=""  src="" frameborder="0"></iframe>
+<div class="am-container" style="margin: 10px auto">
+<div class="am-panel am-panel-default">
+  <div class="am-panel-hd">说明</div>
+  
+  <div class="am-panel-bd">
+      本工具能破解并播放各大视频网站的 VIP 视频，包括但不限于 爱奇艺、腾讯视频、优酷、乐视、芒果TV、搜狐、1905。使用方法：
+      
+      <ol>
+          <li>各大视频网站，找到想要观看的VIP视频，然后复制链接（浏览器上的视频地址）</li>
+          <li>将复制的链接粘贴到顶部的输入框，并点击“破解播放”</li>
+          <li>等待解析完成，即可免费观看VIP视频</li>
+      </ol>
+      
+      <span class="am-text-warning">免责声明：本站不生产解析接口，本站只做解析接口的搬运工！</span>
+  </div>
+</div>
+</div>
+
+
+<footer class="footer">
+  <p>© 2019 小灯芯文娱</p>
+</footer>
 </body>
+<script src="js/jquery-1.7.1.min.js" ></script>
 <script>
     $("#play").click(function(){
             var url = $("#url").val();
+            $(".get").hide();
               //var api="https://www.myxin.top/jx/api/?url=";
               var api="https://jx.618g.com/?url=";
+            $("#ivideo").show();
             $("#ivideo").attr("src",api+url)
     })
     $("#ad").click(function(){
