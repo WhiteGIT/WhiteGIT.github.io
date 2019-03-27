@@ -15,7 +15,7 @@
     <!-- No Baidu Siteapp-->
     <meta http-equiv="Cache-Control" content="no-siteapp"/>
   
-    <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="icon" type="image/png" href="img/getheadimg.jpg">
   
     <!-- Add to homescreen for Chrome on Android -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -133,14 +133,31 @@
       opacity: 1;
       border-bottom-color: #0e90d2;
     }
-    @media only screen and (max-width: 640px){
-      .gzh2{
-        display: none;
-      }
-    }
+    .am-titlebar-cols{
+      display: none;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }    
+@media only screen and (max-width: 640px){
+  .gzh2{
+    display: none;
+  }
+   .am-topbar-fixed-top{
+    position: relative;
+    margin-bottom: 0;
+  }
+  .am-with-topbar-fixed-top{
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  .am-titlebar-cols{
+    display: flex;
+  }
+}
 </style>    
 <div class="gzh2"><p>更多关注公众号</p></div>
-<header class="am-topbar am-topbar-fixed-top">
+<header class="am-topbar am-topbar-fixed-top" id="top">
         <div class="am-container">
           <h1 class="am-topbar-brand">
             <a href="#">小灯芯文娱</a>
@@ -169,9 +186,9 @@
                   </select>
                   
               </span>
-                <input type="text" class="am-form-field" id="url" placeholder="输入视频地址...">
+                <input type="text" class="am-form-field" id="url" placeholder="粘贴视频地址...">
                 <span class="am-input-group-btn">
-                  <button class="am-btn am-btn-default" id="play" type="button">解析视频</button>
+                  <button class="am-btn am-btn-default" id="play" type="button">播放视频</button>
                 </span>
               </div>
  </div>   
@@ -192,13 +209,22 @@
       
       <ol>
           <li>各大视频网站，找到想要观看的VIP视频，然后复制链接（浏览器上的视频地址）</li>
-          <li>将复制的链接粘贴到顶部的输入框，并点击“破解播放”</li>
+          <li>将复制的链接粘贴到顶部的输入框，并点击“播放视频”</li>
           <li>等待解析完成，即可免费观看VIP视频</li>
       </ol>
       
       <span class="am-text-warning">免责声明：本站不生产解析接口，本站只做解析接口的搬运工！</span>
   </div>
 </div>
+</div>
+<div data-am-widget="titlebar" class="am-titlebar am-titlebar-cols" >
+    <h2 class="am-titlebar-title ">
+        <a href="#top" class="">首页</a>
+    </h2>
+
+    <nav class="am-titlebar-nav">
+        <a href="#http://88.zhongwenbook.cn" target="_blank">小说漫画</a>
+    </nav>
 </div>
 
 
