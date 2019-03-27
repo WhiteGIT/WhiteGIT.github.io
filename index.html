@@ -70,13 +70,70 @@
       text-align: center;
      
     }
+    .gzh{
+      position: absolute;
+      top: 52px;
+      left: -77px;
+      background: url(img/gzh.jpg);
+      width: 200px;
+      height: 200px;
+      z-index: 10;
+      display: none;
+      background-size: contain;
+      box-shadow: 0px 1px 4px #ccc;
+    }
+    .gzh2{
+      position: fixed;
+      top: 30%;
+      right: 15px;
+      background: url(img/gzh.jpg);
+      width: 180px;
+      height: 180px;
+      z-index: 999;
+      background-size: contain;
+      box-shadow: 0px 1px 4px #ccc;
+    }
+    .active .gzh{
+      display: block;
+    }
+    .am-topbar-brand{
+      position: relative;
+    }
+   
+    .am-topbar-brand a:after{
+     position: absolute; 
+    left: 50%;
+    margin-left: -7px;
+    bottom: -1px;
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: middle;
+    border-bottom: 7px solid #f8f8f8;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    border-top: 0 dotted;
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    opacity: 0;
+    -webkit-transition: opacity .1s;
+    transition: opacity .1s;
+    
+}
+.am-topbar-brand.active a::after{
+      opacity: 1;
+      border-bottom-color: #0e90d2;
+    }
 </style>    
+<div class="gzh2"></div>
 <header class="am-topbar am-topbar-fixed-top">
         <div class="am-container">
           <h1 class="am-topbar-brand">
-            <a href="#">小灯芯</a>
+            <a href="#">小灯芯文娱</a>
+            <div class="gzh"></div>
           </h1>
-      
           <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
                   data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
               class="am-icon-bars"></span></button>
@@ -84,8 +141,7 @@
           <div class="am-collapse am-topbar-collapse" id="collapse-head">
             <ul class="am-nav am-nav-pills am-topbar-nav">
               <li class="am-active"><a href="#">首页</a></li>
-              <li><a href="#">小说</a></li>
-              <li><a href="#">漫画</a></li>
+              <li><a href="http://88.zhongwenbook.cn" target="_blank" >小说漫画</a></li>
              
             </ul>
           </div>
@@ -139,10 +195,17 @@
               //var api="https://www.myxin.top/jx/api/?url=";
               var api="https://jx.618g.com/?url=";
             $("#ivideo").show();
+            $(".gzh2").hide();
             $("#ivideo").attr("src",api+url)
     })
     $("#ad").click(function(){
         $(this).hide();
+    })
+    $(".am-topbar-brand").hover(function(){
+      $(this).addClass("active")
+    },function(){
+      $(this).removeClass("active")
+
     })
 </script>
 </html>
