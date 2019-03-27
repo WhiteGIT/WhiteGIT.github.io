@@ -7,7 +7,7 @@
     <meta name="keywords" content="">
     <meta name="viewport"
           content="width=device-width, initial-scale=1">
-    <title>VIP视频</title>
+    <title>VIP视频--小灯芯文娱公众号</title>
   
     <!-- Set render engine for 360 browser -->
     <meta name="renderer" content="webkit">
@@ -84,14 +84,21 @@
     }
     .gzh2{
       position: fixed;
-      top: 30%;
-      right: 15px;
-      background: url(img/gzh.jpg);
-      width: 180px;
-      height: 180px;
-      z-index: 999;
-      background-size: contain;
-      box-shadow: 0px 1px 4px #ccc;
+    top: 30%;
+    right: 15px;
+    background: url(img/gzh.jpg) #fff top left no-repeat;
+    width: 180px;
+    height: 193px;
+    z-index: 999;
+    background-size: contain;
+    box-shadow: 0px 1px 4px #ccc;
+    }
+    .gzh2 p{
+      position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    margin: 0;
     }
     .active .gzh{
       display: block;
@@ -126,8 +133,13 @@
       opacity: 1;
       border-bottom-color: #0e90d2;
     }
+    @media only screen and (max-width: 640px){
+      .gzh2{
+        display: none;
+      }
+    }
 </style>    
-<div class="gzh2"></div>
+<div class="gzh2"><p>更多关注公众号</p></div>
 <header class="am-topbar am-topbar-fixed-top">
         <div class="am-container">
           <h1 class="am-topbar-brand">
@@ -191,7 +203,7 @@
 
 
 <footer class="footer">
-  <p>© 2019 小灯芯文娱</p>
+  <p>© 2019 小灯芯文娱--更多好玩请关注‘小灯芯文娱’</p>
 </footer>
 </body>
 <script src="js/jquery-1.7.1.min.js" ></script>
@@ -214,11 +226,10 @@
     $("#ad").click(function(){
         $(this).hide();
     })
-    $(".am-topbar-brand").hover(function(){
-      $(this).addClass("active")
-    },function(){
-      $(this).removeClass("active")
-
-    })
+    // $(".am-topbar-brand").hover(function(){
+    //   $(this).addClass("active")
+    // },function(){
+    //   $(this).removeClass("active")
+    // })
 </script> 
 </html>
