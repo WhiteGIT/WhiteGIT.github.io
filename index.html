@@ -148,7 +148,15 @@
         </div>
 </header>
 <div class="am-container" style="margin: 10px auto">
-        <div class="am-input-group">
+        <div class="am-input-group am-input-group-primary">
+            <span class="am-input-group-btn">
+                <select class=" am-btn am-btn-default" id="line">
+                    <option selected value="0">线路1</option>
+                    <option value="1">线路2</option>
+                    <option value="3">线路3</option>
+                  </select>
+                  
+              </span>
                 <input type="text" class="am-form-field" id="url" placeholder="输入视频地址...">
                 <span class="am-input-group-btn">
                   <button class="am-btn am-btn-default" id="play" type="button">解析视频</button>
@@ -189,11 +197,16 @@
 <script src="js/jquery-1.7.1.min.js" ></script>
   <script src="assets/js/amazeui.min.js"></script>
 <script>
+  var lines=["https://jx.618g.com/?url=","https://www.myxin.top/jx/api/?url=","https://www.myxin.top/jx/api/?url="]
     $("#play").click(function(){
-            var url = $("#url").val();
+      var url = $("#url").val();
+      if(!url){
+        return;
+      }
+      var line = $("#line").val();
             $(".get").hide();
-              //var api="https://www.myxin.top/jx/api/?url=";
-              var api="https://jx.618g.com/?url=";
+              //var api=;
+              var api=lines[line];
             $("#ivideo").show();
             $(".gzh2").hide();
             $("#ivideo").attr("src",api+url)
@@ -207,5 +220,5 @@
       $(this).removeClass("active")
 
     })
-</script>
+</script> 
 </html>
