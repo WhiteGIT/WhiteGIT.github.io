@@ -138,10 +138,21 @@
       position: fixed;
       bottom: 0;
       width: 100%;
-    }    
+    }
+    #line{
+      font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    height: 38px;
+    border: 1px solid #0e90d2
+    }
 @media only screen and (max-width: 640px){
   .gzh2{
     display: none;
+  }
+  .get-title{
+    font-size: 150%;
   }
    /* .am-topbar-fixed-top{
     position: relative;
@@ -179,7 +190,7 @@
 <div class="am-container" style="margin: 10px auto">
         <div class="am-input-group am-input-group-primary">
             <span class="am-input-group-btn">
-                <select class=" am-btn am-btn-default" id="line">
+                <select class="am-btn-default" id="line">
                     <option selected value="0">线路1</option>
                     <option value="1">线路2</option>
                     <option value="3">线路3</option>
@@ -187,8 +198,8 @@
                   
               </span>
                 <input type="text" class="am-form-field" id="url" placeholder="粘贴视频地址...">
-                <span class="am-input-group-btn">
-                  <button class="am-btn am-btn-default" id="play" type="button">播放视频</button>
+                <span class="am-input-group-btn am-input-group-primary"> 
+                  <button class="am-btn am-btn-primary" id="play" type="button"><i class="am-icon-play-circle-o"></i> 播放视频</button>
                 </span>
               </div>
  </div>   
@@ -221,7 +232,7 @@
 
 
 <footer class="footer">
-  <p>© 2019 小灯芯文娱--更多好玩请关注‘小灯芯文娱’</p>
+  <p>© 2019 小灯芯文娱<br>更多好玩请关注‘小灯芯文娱’</p>
 </footer>
 </body>
 <script src="js/jquery-1.7.1.min.js" ></script>
