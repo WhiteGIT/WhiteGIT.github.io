@@ -1,274 +1,228 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
-    <title>VIP视频--小灯芯文娱公众号</title>
-  
-    <!-- Set render engine for 360 browser -->
-    <meta name="renderer" content="webkit">
-  
-    <!-- No Baidu Siteapp-->
-    <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  
-    <link rel="icon" type="image/png" href="img/getheadimg.jpg">
-  
-    <!-- Add to homescreen for Chrome on Android -->
-    <meta name="mobile-web-app-capable" content="yes">
-    <link rel="icon" sizes="192x192" href="assets/i/app-icon72x72@2x.png">
-  
-    <!-- Add to homescreen for Safari on iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/i/app-icon72x72@2x.png">
-  
-    <!-- Tile icon for Win8 (144x144 + tile color) -->
-    <meta name="msapplication-TileImage" content="assets/i/app-icon72x72@2x.png">
-    <meta name="msapplication-TileColor" content="#0e90d2">
-  
-    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
-    <!--
-    <link rel="canonical" href="http://www.example.com/">
-    -->
-  
-    <link rel="stylesheet" href="assets/css/amazeui.min.css">
-    <link rel="stylesheet" href="assets/css/app.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>送蒲娅</title>
+    <base target="_blank" />
 </head>
-<body class="am-with-topbar-fixed-top">
-    <!--[if lte IE 9]>
-    <p class="browsehappy">你正在使用<strong>过时</strong>的浏览器，Amaze UI 暂不支持。 请 <a
-    href="http://browsehappy.com/" target="_blank">升级浏览器</a>
-    以获得更好的体验！</p>
-    <![endif]-->
 <style>
-    .get {
-      background: #1E5B94;
-      color: #fff;
-      text-align: center;
-      padding: 100px 0;
+    html{
+     background:url('0.jpg') center center;
+     box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+        height: 100%;
+        color:red;
+        font-family: arial,"Hiragino Sans GB","Microsoft Yahei",sans-serif;
     }
-
-    .get-title {
-      font-size: 200%;
-      border: 2px solid #fff;
-      padding: 20px;
-      display: inline-block;
-    }
-
-    .get-btn {
-      background: #fff;
-    }
-    .footer p {
-      color: #7f8c8d; 
-      margin: 0;
-      padding: 15px 0;
-      font-size: 10px;
-      text-align: center;
-     
-    }
-    .gzh{
-      position: absolute;
-      top: 52px;
-      left: -77px;
-      background: url(img/gzh.jpg);
-      width: 200px;
-      height: 200px;
-      z-index: 10;
-      display: none;
-      background-size: contain;
-      box-shadow: 0px 1px 4px #ccc;
-    }
-    .gzh2{
+    h2{
       position: fixed;
-    top: 30%;
-    right: 15px;
-    background: url(img/gzh.jpg) #fff top left no-repeat;
-    width: 180px;
-    height: 193px;
-    z-index: 999;
-    background-size: contain;
-    box-shadow: 0px 1px 4px #ccc;
-    }
-    .gzh2 p{
-      position: absolute;
-    bottom: 0px;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    }
-    .active .gzh{
-      display: block;
-    }
-    .am-topbar-brand{
-      position: relative;
-    }
-   
-    .am-topbar-brand a:after{
-     position: absolute; 
-    left: 50%;
-    margin-left: -7px;
-    bottom: -1px;
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    vertical-align: middle;
-    border-bottom: 7px solid #f8f8f8;
-    border-right: 7px solid transparent;
-    border-left: 7px solid transparent;
-    border-top: 0 dotted;
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-    opacity: 0;
-    -webkit-transition: opacity .1s;
-    transition: opacity .1s;
-    
-}
-.am-topbar-brand.active a::after{
-      opacity: 1;
-      border-bottom-color: #0e90d2;
-    }
-    .am-titlebar-cols{
-      display: none;
-      position: fixed;
-      bottom: 0;
       width: 100%;
+      transform:translateY(-50%);
+      font-family: 'Love Ya Like A Sister', cursive;
+      font-size: 30px;
+      color: #c70012;
+      padding: 0 20px;
     }
-    #line{
-      font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 1.2;
-    text-align: center;
-    height: 38px;
-    border: 1px solid #0e90d2;
-    background-image: none;
-    border-radius: 0 !important;
-    cursor: pointer;
-    outline: 0;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-transition: background-color .3s ease-out,border-color .3s ease-out;
-    transition: background-color .3s ease-out,border-color .3s ease-out;
+    .sy {
+            background:#2f373a;
+            font-family:Arial,Helvetica,sans-serif;font-size:100%;
+            line-height:1em;color:#4e4e4e;
+            min-width:920px;
+            border-top:10px solid #0c0e0e
+          }
+    
+    /*最外层容器样式*/
+    .wrap{
+        width: 200px;
+        height: 200px;
+        /*改变左右上下,图片方块移动*/
+        margin: 150px auto;
+        position: relative;
+        
     }
-@media only screen and (max-width: 640px){
-  .gzh2{
-    display: none;
-  }
-  .get-title{
-    font-size: 150%;
-  }
-   /* .am-topbar-fixed-top{
-    position: relative;
-    margin-bottom: 0;
-  }
-  .am-with-topbar-fixed-top{
-    padding-top: 0;
-    padding-bottom: 50px;
-  }
-  .am-titlebar-cols{
-    display: flex;
-  } */
-}
-</style>    
-<div class="gzh2"><p>更多关注公众号</p></div>
-<header class="am-topbar am-topbar-fixed-top" id="top">
-        <div class="am-container">
-          <h1 class="am-topbar-brand">
-            <a href="#">小灯芯文娱</a>
-            <div class="gzh"></div>
-          </h1>
-          <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-show-sm-only"
-                  data-am-collapse="{target: '#collapse-head'}"><span class="am-sr-only">导航切换</span> <span
-              class="am-icon-bars"></span></button>
-      
-          <div class="am-collapse am-topbar-collapse" id="collapse-head">
-            <ul class="am-nav am-nav-pills am-topbar-nav">
-              <li class="am-active"><a href="#">首页</a></li>
-              <li><a href="http://88.zhongwenbook.cn" target="_blank" >小说漫画</a></li>
-             
-            </ul>
-          </div>
+    /*包裹所有容器样式*/
+    .cube{
+        width: 200px;
+        height: 200px;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+        transform: rotateX(-30deg) rotateY(-80deg);
+        -webkit-animation: rotate 20s infinite;
+        /*匀速*/
+        animation-timing-function: linear;
+    }
+    @-webkit-keyframes rotate{
+        from{transform: rotateX(0deg) rotateY(0deg);}
+        to{transform: rotateX(360deg) rotateY(360deg);}
+    }
+    .cube div{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        opacity: 0.8;
+        transition: all .4s;
+    }
+    /*定义所有图片样式*/
+    .pic{
+        width: 200px;
+        height: 200px;
+    }
+    .cube .out_front{
+        transform: rotateY(0deg) translateZ(100px);
+    }
+    .cube .out_back{
+        transform: translateZ(-100px) rotateY(180deg);
+    }
+    .cube .out_left{
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    .cube .out_right{
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .cube .out_top{
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .cube .out_bottom{
+        transform: rotateX(-90deg) translateZ(100px);
+    }
+    /*定义小正方体样式
+        by 何问起
+    */
+    .cube span{
+        display: bloack;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+    }
+    .cube .in_pic{
+        width: 100px;
+        height: 100px;
+    }
+    .cube .in_front{
+        transform: rotateY(0deg) translateZ(50px);
+    }
+    .cube .in_back{
+        transform: translateZ(-50px) rotateY(180deg);
+    }
+    .cube .in_left{
+        transform: rotateY(90deg) translateZ(50px);
+    }
+    .cube .in_right{
+        transform: rotateY(-90deg) translateZ(50px);
+    }
+    .cube .in_top{
+        transform: rotateX(90deg) translateZ(50px);
+    }
+    .cube .in_bottom{
+        transform: rotateX(-90deg) translateZ(50px);
+    }
+    /*鼠标移入后样式*/
+    .cube:hover .out_front{
+        transform: rotateY(0deg) translateZ(200px);
+    }
+    .cube:hover .out_back{
+        transform: translateZ(-200px) rotateY(180deg);
+    }
+    .cube:hover .out_left{
+        transform: rotateY(90deg) translateZ(200px);
+    }
+    .cube:hover .out_right{
+        transform: rotateY(-90deg) translateZ(200px);
+    }
+    .cube:hover .out_top{
+        transform: rotateX(90deg) translateZ(200px);
+    }
+    .cube:hover .out_bottom{
+        transform: rotateX(-90deg) translateZ(200px);
+    }
+    .hovertreeinfo{
+        text-align:center;
+        color: transparent;
+        -webkit-text-stroke: 1px #FF1CAE;
+        letter-spacing: 0.04em;
+    }
+    
+    .text{
+        width: 300px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        text-align:center;
+        background-image: -webkit-linear-gradient(left,blue,#66ffff 10%,#cc00ff 20%,#CC00CC 30%, #CCCCFF 40%, #00FFFF 50%,#CCCCFF 60%,#CC00CC 70%,#CC00FF 80%,#66FFFF 90%,blue 100%);
+        -webkit-text-fill-color: transparent;/* 将字体设置成透明色 */
+        -webkit-background-clip: text;/* 裁剪背景图，使文字作为裁剪区域向外裁剪 */
+        -webkit-background-size: 200% 100%; 
+        -webkit-animation: masked-animation 4s linear infinite;
+        font-size: 40px;
+    }
+    
+    @keyframes masked-animation {
+        0% {
+            background-position: 0  0;
+        }
+        100% {
+            background-position: -100%  0;
+        }
+    }
+    </style>
+<body>
+    <div class="hovertreeinfo">
+    <HR style="border:3 double #987cb9" width="80%" color=#987cb9 SIZE=3></HR>
+    <p>因为有你，世界变得美丽；<br>因为有你，生活有了意义；<br>因为有你，一切都是甜蜜。<br>亲爱的浦娅，情人节快乐！</p>
+    <HR style="border:3 double #987cb9" width="80%" color=#987cb9 SIZE=3></HR>
+    <br><br>
+	</div>
+    <div>
+        <h1 class="text">情人节快乐</h1>
+    </div>
+    <div class="wrap">
+        <div class="cube">
+            <div class="out_front">
+                <img src="img/1.jpg" class="pic" />  <!-- 外前 -->
+            </div>
+            <div class="out_back">
+                <img src="img/2.jpg" class="pic" />  <!-- //外后 -->
+            </div>
+            <div class="out_left">
+                <img src="img/3.jpg" class="pic" />  <!-- //外左 -->
+            </div>
+            <div class="out_right">
+                <img src="img/4.jpg" class="pic" />  <!-- //外右 -->
+            </div>
+            <div class="out_top">
+                <img src="img/5.jpg" class="pic" />  <!-- 外上 -->
+            </div>
+            <div class="out_bottom">
+                <img src="img/6.jpg" class="pic" />  <!-- 外下 -->
+            </div>
+            <!--小正方体 -->
+            <span class="in_front">
+                <img src="img/7.jpg" class="in_pic" /> <!-- //内前 -->
+            </span>
+            <span class="in_back">
+                <img src="img/8.jpg" class="in_pic" /> <!-- //内后 -->
+            </span>
+            <span class="in_left">
+                <img src="img/2.jpg" class="in_pic" /> <!-- 内左 -->
+            </span>
+            <span class="in_right">
+                <img src="img/1.jpg" class="in_pic" /> <!-- 内右 -->
+            </span>
+            <span class="in_top">
+                <img src="img/4.jpg" class="in_pic" /> <!-- 内上 -->
+            </span>
+            <span class="in_bottom">
+                <img src="img/3.jpg" class="in_pic" /> <!-- 内下 -->
+            </span>
         </div>
-</header>
-<div class="am-container" style="margin: 10px auto">
-        <div class="am-input-group am-input-group-primary">
-            <span class="am-input-group-btn">
-                <select class="am-btn-default" id="line">
-                    <option selected value="0">线路1</option>
-                    <option value="1">线路2</option>
-                    <option value="3">线路3</option>
-                  </select>
-                  
-              </span>
-                <input type="text" class="am-form-field" id="url" placeholder="粘贴视频地址...">
-                <span class="am-input-group-btn am-input-group-primary"> 
-                  <button class="am-btn am-btn-primary" id="play" type="button"><i class="am-icon-play-circle-o"></i> 播放视频</button>
-                </span>
-              </div>
- </div>   
-<div class="get">
-        <div class="am-g">
-          <div class="am-u-lg-12">
-            <h1 class="get-title">请在上方粘贴视频地址</h1>
-          </div>
-        </div>
-</div>
-<iframe id="ivideo" style="width: 100%;display:none;" height="500px;" allowfullscreen="" allowtransparency=""  src="" frameborder="0"></iframe>
-<div class="am-container" style="margin: 10px auto">
-<div class="am-panel am-panel-default">
-  <div class="am-panel-hd">说明</div>
-  
-  <div class="am-panel-bd">
-      本工具能破解并播放各大视频网站的 VIP 视频，包括但不限于 爱奇艺、腾讯视频、优酷、乐视、芒果TV、搜狐、1905。使用方法：
-      
-      <ol>
-          <li>各大视频网站，找到想要观看的VIP视频，然后复制链接（浏览器上的视频地址）</li>
-          <li>将复制的链接粘贴到顶部的输入框，并点击“播放视频”</li>
-          <li>等待解析完成，即可免费观看VIP视频</li>
-      </ol>
-      
-      <span class="am-text-warning">免责声明：本站不生产解析接口，本站只做解析接口的搬运工！</span>
-  </div>
-</div>
-</div>
-
-
-
-<footer class="footer">
-  <p>© 2019 小灯芯文娱<br>更多好玩请关注‘小灯芯文娱’</p>
-</footer>
+    </div>
+    <audio controls autoplay hidden> 
+        <source src="img/ccy.mp3" type="audio/mpeg">
+      您的浏览器不支持 audio 元素。
+      </audio>
 </body>
-<script src="js/jquery-1.7.1.min.js" ></script>
-  <script src="assets/js/amazeui.min.js"></script>
-<script>
-  var lines=["https://jx.618g.com/?url=","https://www.myxin.top/jx/api/?url=","https://www.myxin.top/jx/api/?url="]
-    $("#play").click(function(){
-      var url = $("#url").val();
-      if(!url){
-        return;
-      }
-      var line = $("#line").val();
-            $(".get").hide();
-              //var api=;
-              var api=lines[line];
-            $("#ivideo").show();
-            $(".gzh2").hide();
-            $("#ivideo").attr("src",api+url)
-    })
-    $("#ad").click(function(){
-        $(this).hide();
-    })
-    // $(".am-topbar-brand").hover(function(){
-    //   $(this).addClass("active")
-    // },function(){
-    //   $(this).removeClass("active")
-    // })
-</script> 
+
 </html>
